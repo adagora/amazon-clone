@@ -1,13 +1,5 @@
 export const initialState = {
-    basket:[
-        {
-            id:"12324",
-            title:"The lean startup",
-            price:10.45,
-            rating:5,
-            image:"https://f01.esfr.pl/foto/3/3706493058/50f4ae137f5a219040582f0b3f31f7ad/philips-hp8230-00,3706493058_7.jpg",
-        },
-    ],
+    basket:[],
     user: null,
 };
 
