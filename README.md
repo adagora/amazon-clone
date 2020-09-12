@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## LIVE VERSION ON FIREBASE 
+[https://clone-57b64.web.app/](click here, thank you)
 
 ## Available Scripts
 

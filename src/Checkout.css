@@ -19,3 +19,6 @@
 .checkout__right {
     margin-top: 20px;
 }
+.checkout__login {
+    display: flex;
+}
