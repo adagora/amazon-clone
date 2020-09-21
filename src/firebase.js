@@ -1,6 +1,6 @@
 import firebase from "firebase";
 
-const firebaseApp = firebase.initializeApp({
+const firebaseConfig = {
         apiKey: "AIzaSyAi-dawa4pihqk2oHOdialBCWZN0kfExYw",
         authDomain: "clone-57b64.firebaseapp.com",
         databaseURL: "https://clone-57b64.firebaseio.com",
@@ -9,8 +9,10 @@ const firebaseApp = firebase.initializeApp({
         messagingSenderId: "122950922360",
         appId: "1:122950922360:web:8eae41bebe5b11686cbd8d",
         measurementId: "G-9LMVSVCZF0"
-      });
+      };
+      const firebaseApp = firebase.initializeApp(firebaseConfig);
 
+      const db = firebaseApp.firestore();
       const auth = firebase.auth();
 
-      export { auth };
+export { db, auth };

@@ -20,7 +20,7 @@ function Login() {
                 // logged in, redirected to homepage ....
                 history.push("/");
             })
-            .catch((e) => alert(e.message));
+            .catch((error) => alert(error.message));
     }  
 
     const register = (event) => {
@@ -31,9 +31,11 @@ function Login() {
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
                 // created a user and logged in, redirected to homepage
-                history.push("/");
+                if (auth) {
+                    history.push("/");   
+                }
             })
-            .catch((e) => alert(e.message));
+            .catch((error) => alert(error.message));
         
     }  
     return (
